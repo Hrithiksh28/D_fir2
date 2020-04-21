@@ -1,0 +1,171 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    tools:context = ".MainActivity">
+
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/D_FIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="D_FIR"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LOGO"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="46dp"
+        android:focusable="true"
+        android:hint="Username"
+        android:textColorHighlight="#ff7eff15"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/LOGO"
+        android:layout_width="327dp"
+        android:layout_height="208dp"
+        android:layout_below="@+id/D_FIR"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_alignEnd="@+id/username"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/attempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="50dp"
+        android:text="Attempts Left:"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/send_otp"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LOGO"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginRight="206dp"
+        android:text="Send OTP" />
+
+    <TextView
+        android:id="@+id/attempt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LOGO"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="150dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/LOGO"
+        android:layout_marginTop="273dp"
+        android:ems="6"
+        android:hint="Enter OTP"
+        android:maxLength="4"
+        android:inputType="numberPassword"
+        android:textColorHint="#2196F3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LOGO"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="279dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginRight="186dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="202dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="216dp"
+        android:layout_marginRight="216dp"
+        android:layout_marginBottom="40dp"
+        android:text="Login" />
+
+    <TextView
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LOGO"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginRight="318dp"
+        android:layout_marginBottom="290dp"
+        android:text="Not a User?"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LOGO"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginRight="245dp"
+        android:text="Register"
+        android:textColor="#303F9F"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/otptimer"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/LOGO"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginRight="186dp" />
+
+</RelativeLayout>
